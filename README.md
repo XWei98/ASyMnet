@@ -21,9 +21,6 @@ demonstrate that ASyMnet achieves superior performance in both metrics and visua
     <img src="Figure/ASyMnet.png" alt="Framework" width="1000"/>
 </div>
 
-## Code Structure Illustration
-
-For the core model components, we implement the Mamba-based architecture in `models/ASyMnet.py`. The Learnable Symmetric Scanning Mechanism (LSSM) and Visual Symmetric Decoupled State-Space Block (V3SBlock) are defined within the network building blocks. The Attention-Enhanced State-Space Module (AESM) is integrated into the skip connections to refine multi-scale features during the decoding process.
 ## Preparation
 
 ### Environment Setup
@@ -69,8 +66,6 @@ For the core model components, we implement the Mamba-based architecture in `mod
     ```bash
     python train_synapse.py 
     ```
-2. 🚨 <span style="color:red;">ATTENTION!!!</span> 🚨
- When training on the Synapse dataset (3D abdominal CT scans without clear bilateral symmetry), the LSSM module should be disabled, and only the AESM module is utilized within the AERB skip connections.
 
 ## Acknowledgements
 

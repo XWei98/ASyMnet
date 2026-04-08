@@ -430,7 +430,7 @@ class AERB(nn.Module):
         return x, oldxs, xs_new
 
 
-class SS2D(nn.Module):
+class LSSM(nn.Module):
     def __init__(
             self,
             d_model,
@@ -728,7 +728,7 @@ class SS2D(nn.Module):
         return out
 
 
-class VSSBlock(nn.Module):
+class V3SBlock(nn.Module):
     def __init__(
             self,
             hidden_dim: int = 0,
@@ -740,7 +740,7 @@ class VSSBlock(nn.Module):
     ):
         super().__init__()
         self.ln_1 = norm_layer(hidden_dim)
-        self.self_attention = SS2D(d_model=hidden_dim, dropout=attn_drop_rate, d_state=d_state, **kwargs)
+        self.self_attention = LSSM(d_model=hidden_dim, dropout=attn_drop_rate, d_state=d_state, **kwargs)
         self.drop_path = DropPath(drop_path)
 
     def forward(self, input: torch.Tensor):
@@ -778,7 +778,7 @@ class VSSLayer(nn.Module):
         self.use_checkpoint = use_checkpoint
 
         self.blocks = nn.ModuleList([
-            VSSBlock(
+            V3SBlock(
                 hidden_dim=dim,
                 drop_path=drop_path[i] if isinstance(drop_path, list) else drop_path,
                 norm_layer=norm_layer,
@@ -844,7 +844,7 @@ class VSSLayer_up(nn.Module):
         self.use_checkpoint = use_checkpoint
 
         self.blocks = nn.ModuleList([
-            VSSBlock(
+            V3SBlock(
                 hidden_dim=dim,
                 drop_path=drop_path[i] if isinstance(drop_path, list) else drop_path,
                 norm_layer=norm_layer,

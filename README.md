@@ -2,10 +2,17 @@
 Xiaowei Zhao<sup>1,3</sup>, Chenglong Li<sup>1,3</sup> (Corresponding author), Jin Tang<sup>2</sup>, Chuanfu Li<sup>4</sup> 
 </div><div align="center">
 <sup>1</sup>School of Artificial Intelligence, Anhui University, Hefei, China <sup>2</sup>School of Computer Science and Technology, Anhui University, Hefei, China <sup>3</sup>State Key Laboratory of Opto-Electronic Information Acquisition and Protection Technology, China <sup>4</sup>The First Affiliated Hospital, Anhui University of Chinese Medicine, Hefei, China 
-</div><div align="center"></div>Abstract：In recent years, deep learning has demonstrated strong potential for medical image segmentation, but the task remains challenging due to substantial variations in the shape, texture, and contrast of anatomical structures. While state-space models like Mamba have gained attention for linear computational complexity and global receptive fields, they struggle with complex, irregular medical structures due to 1D sequential processing. When extending Mamba to highly complex medical images (e.g., chest X-rays), two issues arise:🔥1. How can Mamba overcome the limitations of single-order sequential processing to avoid error accumulation in highly interleaved anatomical structures? 🔥2. How can we leverage the inherent symmetry of anatomical structures as an end-to-end learnable prior rather than a post-processing step? To address these issues, we propose a novel Attention-enhanced Mamba with learnable Symmetric scan mechanism network (ASyMnet). Our key idea is to exploit bilateral symmetry to decouple feature maps, enabling parallel and structure-consistent context aggregation via four-directional scanning. To achieve this, we introduce the Learnable Symmetric Scanning Mechanism (LSSM), which learns a symmetry axis to adaptively decouple the features. Furthermore, we propose an Attention-Enhanced State-Space Module (AESM) to enrich global context representations by incorporating self-attention directly into the state-space formulation.
-
-Additionally, we present LaXAS, a large-scale chest X-ray segmentation dataset with 6,289 annotated images across 32 anatomical structures. 
-Extensive experiments demonstrate that ASyMnet achieves state-of-the-art performance on LaXAS, CXRS, and Synapse datasets.
+</div><div align="center"></div>Abstract：In recent years, deep learning has demonstrated strong potential and growing clinical relevance for medical
+image segmentation. However, this task remains challenging due to substantial variations in the shape, texture,
+and contrast of anatomical structures in medical images. While CNNs and Transformers are widely used, they
+face issues like limited receptive fields and high computational costs. Recently, state-space models like Mamba
+have gained attention but struggle with complex, irregular medical structures due to 1D sequential processing.
+To address this, we propose a novel Attention-enhanced Mamba with learnable Symmetric scan mechanism
+network (ASyMnet). ASyMnet leverages anatomical symmetry to simplify dense regions and dynamically focus
+on distinct structures. We further introduce an Attention-Enhanced State-Space Module (AESM) to enrich
+global context representation. Additionally, we present a new chest X-ray segmentation dataset (LaXAS) with
+6289 annotated images across 32 anatomical structures. Experiments on LaXAS, CXRS, and Synapse datasets
+demonstrate that ASyMnet achieves superior performance in both metrics and visual quality.
  
 
 ## Framework

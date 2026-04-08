@@ -80,7 +80,7 @@ demonstrate that ASyMnet achieves superior performance in both metrics and visua
 
 ## References
 
-If you find this project or the LaXAS dataset helpful, please consider citing our paper:
+If you find this project helpful, please consider citing our paper:
 ```bibtex
 @article{ZHAO2026113680,
 title = {Medical image segmentation via Attention-enhanced Mamba with learnable Symmetry scan and a benchmark},

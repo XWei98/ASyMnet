@@ -1,7 +1,14 @@
 <p align="center"><strong>Medical Image Segmentation via Attention-Enhanced Mamba with Learnable Symmetry Scan and A Benchmark</strong></p><div align="center">
 Xiaowei Zhao<sup>1,3</sup>, Chenglong Li<sup>1,3</sup> (Corresponding author), Jin Tang<sup>2</sup>, Chuanfu Li<sup>4</sup> 
 </div><div align="center">
-<sup>1</sup>School of Artificial Intelligence, Anhui University, Hefei, China <sup>2</sup>School of Computer Science and Technology, Anhui University, Hefei, China <sup>3</sup>State Key Laboratory of Opto-Electronic Information Acquisition and Protection Technology, China <sup>4</sup>The First Affiliated Hospital, Anhui University of Chinese Medicine, Hefei, China 
+
+ 
+<div align="center">
+<sup>1</sup>School of Artificial Intelligence, Anhui University, Hefei, China<br>
+<sup>2</sup>School of Computer Science and Technology, Anhui University, Hefei, China<br>
+<sup>3</sup>State Key Laboratory of Opto-Electronic Information Acquisition and Protection Technology, China<br>
+<sup>4</sup>The First Affiliated Hospital, Anhui University of Chinese Medicine, Hefei, China
+</div>
 </div><div align="center"></div>Abstract：In recent years, deep learning has demonstrated strong potential and growing clinical relevance for medical
 image segmentation. However, this task remains challenging due to substantial variations in the shape, texture,
 and contrast of anatomical structures in medical images. While CNNs and Transformers are widely used, they

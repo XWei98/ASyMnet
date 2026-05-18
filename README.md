@@ -82,14 +82,11 @@ demonstrate that ASyMnet achieves superior performance in both metrics and visua
 
 If you find this project helpful, please consider citing our paper:
 ```bibtex
-@article{ZHAO2026113680,
-title = {Medical image segmentation via Attention-enhanced Mamba with learnable Symmetry scan and a benchmark},
-journal = {Pattern Recognition},
-volume = {179},
-pages = {113680},
-year = {2026},
-issn = {0031-3203},
-doi = {https://doi.org/10.1016/j.patcog.2026.113680},
-url = {https://www.sciencedirect.com/science/article/pii/S003132032600645X},
-author = {Xiaowei Zhao and Chenglong Li and Jin Tang and Chuanfu Li},
+@article{zhao2026medical,
+  title={Medical image segmentation via Attention-enhanced Mamba with learnable Symmetry scan and a benchmark},
+  author={Zhao, Xiaowei and Li, Chenglong and Tang, Jin and Li, Chuanfu},
+  journal={Pattern Recognition},
+  pages={113680},
+  year={2026},
+  publisher={Elsevier}
 }
